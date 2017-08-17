@@ -195,7 +195,7 @@ app.post('/api/query', cors(), function (req, res, next) {
     } else {
         params = req.body.query;
     }
-    params.version = discovery.version_date;
+    params.version = '2017-08-01';
     if (!params.hasOwnProperty('passages')) {
         params.passages = 'true';
     }
